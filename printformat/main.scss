@@ -1,0 +1,163 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* header */
+header {
+    display: flex;
+    padding: 48px 40px 60px 40px;
+    flex-direction: column;
+    gap: 20px;
+    align-self: stretch;
+    background: rgb(0, 117, 184);
+    color: azure;
+    padding: 70px 110px;
+    h1 {
+        font-size: 56px;
+        font-weight: 400;
+        color: rgba($color: #ddd, $alpha: 0.5);
+        span{
+            color: azure;
+        }
+    }
+
+    data {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    data div {
+        padding: 20px;
+        font-size: 28px;
+        font-style: normal;
+    }
+
+}
+/* end header */
+
+/* main */
+main {
+    margin: 70px 110px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+    color: hwb(204 24% 60%);
+    h1 {
+        font-size: 62px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    span {
+        font-size: 25px;
+        margin: -8px !important;
+    }
+
+    b {
+        font-size: 28px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        text-align: left;
+    }
+
+    .service-description {
+        color: #666;
+        font-size: 20px;
+        margin: 8px 0px;
+    }
+
+}
+
+/*end  main */
+footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 70px 110px;
+    background: rgb(239, 240, 240);
+    padding: 20px;
+    div {
+        padding: 20px;
+        font-size: 28px;
+        font-style: normal;
+    }
+}
+/* end footer */
+
+@media print {
+    header, main, footer {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header data div {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    main h1 {
+        font-size: 32px;
+    }
+
+    main span {
+        font-size: 16px;
+        margin: -10px !important;
+    }
+
+    main b {
+        font-size: 18px;
+    }
+
+    main table {
+        margin-top: 10px;
+    }
+
+    main th,
+    main td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .service-description {
+        font-size: 14px;
+        margin: 4px 0px;
+    }
+
+    footer {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    footer div {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
